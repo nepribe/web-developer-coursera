@@ -1,0 +1,94 @@
+/********** Base styles **********/
+* {
+  box-sizing: border-box;
+  text-align: justify;
+  font-family: arial;  
+}
+h1 {	
+	text-align: center;
+	font-size: 1.75*18;
+	padding-top: 20px;
+	padding-bottom: 50px; 	
+}
+section {
+	padding-left: 5px;
+	background-color: gray;
+	font-size: 18;
+}
+h2 {
+	text-align: center;			
+	font-size: 1.25*18;
+	margin-top: 0%;
+	margin-left: 53%;
+	border-left: 1px solid black;
+	border-bottom: 1px solid black;			
+	padding: 5px;
+	
+}
+p {
+	margin: 0px;
+	padding-left: 20px; 
+	padding-right: 20px; 
+	padding-top: 0px; 
+	padding-bottom: 5px; 
+}
+
+.dish1 h2{
+	background-color: green;	
+}
+.dish2 h2{
+	background-color: blue;
+}
+.dish3 h2{
+	background-color: yellow;
+}
+
+@media (min-width: 992px) {	
+	.dish1, .dish2, .dish3 {		
+		position: relative;
+		float: left;		
+		width: 30.6%;					
+		height: auto;		
+		border: 1px solid black;
+		margin-right: 2%;						
+		margin-left: 0%;
+	}
+	.dish1 {
+		margin-left: 2%;
+	}
+}
+@media (min-width: 768px) and (max-width: 991px) {
+	.dish1, .dish2 {
+		position: relative;
+		float: left;
+		width: 44%;	
+		height: auto;
+		margin-right: 4%;				
+		margin-top: 10px;
+		margin-bottom: 10px;
+		border: 1px solid black;							
+	}
+	.dish1 {
+		margin-left: 4%;
+	}
+	.dish3 {
+		position: relative;
+		float: left;		
+		width: 92%;				
+		margin-left: 4%;		
+		margin-right: 4%;						
+		margin-top: 25px;
+		margin-bottom: 25px;					
+		border: 2px solid black;		
+	}
+}
+@media (max-width: 767px) {
+	.dish1, .dish2, .dish3 {
+		border: 1px solid black;
+		width: 90%;			
+		margin-left: 5%;		
+		margin-right: 5%;
+		margin-top: 25px;
+		margin-bottom: 25px;					
+	}
+}
